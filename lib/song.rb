@@ -38,14 +38,6 @@ class Song
     return song               #returns song
   end
 
-  def self.find_by_name(name)         #finds a song instance in @@all by the name property of the song
-    @@all.detect {|song| song.name == name}
-  end
-
-  def self.find_or_create_by_name(name)
-    find_by_name(name) || create(name)
-  end
-
   #sets the artist object to belong to the song
   def self.new_from_filename(filename)
     parts = filename.split(" - ")
