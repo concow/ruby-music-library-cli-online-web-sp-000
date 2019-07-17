@@ -11,7 +11,7 @@ class Song
     self.genre = genre if genre
   end
   #writer/setter
-  def artist=(artist)     #invokes Artist#add_song to add itself to the artist's collection of songs (artist has many songs)
+  def artist=(artist)               #invokes Artist#add_song to add itself to the artist's collection of songs (artist has many songs)
     @artist = artist
     artist.add_song(self)
   end
