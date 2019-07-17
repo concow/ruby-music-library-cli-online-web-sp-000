@@ -32,6 +32,6 @@ class Genre
   end
 
   def artists                                  #returns a collection of artists for all of the genre's songs
-    #songs.collect{ |s| s.artist }.uniq       #genre has many artists through songs
+    songs.collect{ |s| s.artist }.uniq       #genre has many artists through songs
   end
 end
