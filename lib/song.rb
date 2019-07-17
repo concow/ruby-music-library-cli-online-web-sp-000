@@ -1,5 +1,5 @@
 class Song
-extend Concerns::Findable
+  extend Concerns::Findable
   attr_accessor :name
   attr_reader :artist, :genre         #song belongs to artist. returns the genre of the song (song belongs to genre)
 
