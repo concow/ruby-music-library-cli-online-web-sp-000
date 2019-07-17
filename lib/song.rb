@@ -33,6 +33,17 @@ class Song
     @@all << self
   end
 
+
+  def self.create(name)
+    song = new(name)          #creates song
+    song.save                 #saves song
+    return song               #returns song
+  end
+
+  def self.find_by_name(name)         #finds a song instance in @@all by the name property of the song
+    @@all.detect {|song| song.name == name}
+  end
+  
   def self.create(name)
     song = new(name)          #creates song
     song.save                 #saves song
